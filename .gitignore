@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+
+# Log files
+*.log
+
+# Temporary files
+*.swp
+*.swo
+.DS_Store
+
+# Dist directory
+# /dist

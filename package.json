@@ -1,0 +1,23 @@
+{
+  "name": "jonacornejo",
+  "version": "1.0.0",
+  "scripts": {
+    "watch:scss": "sass --watch src/scss/main.scss:dist/style.css --no-source-map",
+    "watch:scss:min": "sass --watch src/scss/main.scss:dist/style.min.css --style=compressed --no-source-map",
+    "watch:js": "chokidar 'src/js/*.js' -c 'terser src/js/main.js -o dist/scripts.js'",
+    "watch:js:min": "chokidar 'src/js/*.js' -c 'terser src/js/main.js -o dist/scripts.min.js --compress --mangle'",
+    "browser-sync": "browser-sync start --server --files 'dist/*.css, **/*.html, dist/*.js'",
+    "watch": "npm run watch:scss & npm run watch:scss:min & npm run watch:js & npm run watch:js:min & npm run browser-sync",
+    "build:scss": "sass src/scss/main.scss dist/style.css --no-source-map",
+    "build:scss:min": "sass src/scss/main.scss dist/style.min.css --style=compressed --no-source-map",
+    "build:js": "terser src/js/main.js --output dist/scripts.js",
+    "build:js:min": "terser src/js/main.js --output dist/scripts.min.js --compress --mangle",
+    "build": "npm run build:scss && npm run build:scss:min && npm run build:js && npm run build:js:min"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "chokidar-cli": "^3.0.0",
+    "sass": "^1.66.1",
+    "terser": "^5.19.4"
+  }
+}
