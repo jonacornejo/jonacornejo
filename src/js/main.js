@@ -1,4 +1,4 @@
 $(document).ready(
 
-	$('p').show('slow')
+	// $('p').show('slow')
 );

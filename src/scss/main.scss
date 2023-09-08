@@ -2,6 +2,29 @@
 @import '_typography.scss';
 
 body {
-	margin: 100px;
 	background: $cream;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	.content {
+		text-align: center;
+
+		div.avatar {
+			margin-bottom: 30px;
+
+			img {
+				border-radius: 30%;
+				height: 300px;
+				width: 300px;
+			}
+		}
+
+		div.button {
+			margin-top: 70px;
+		}
+	}
 }

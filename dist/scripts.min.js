@@ -1,1 +1,1 @@
-$(document).ready($("p").show("slow"));
+$(document).ready();
