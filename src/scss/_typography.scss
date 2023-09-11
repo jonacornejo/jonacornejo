@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 * {
-	font-family: 'Unica One', cursive;
+	font-family: 'Barlow', sans-serif;
+	color: $darkgray;
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 38px;
 	margin-top: 0;
 	margin-bottom: 15px;
 }
 
-h2 {
-	font-size: 45px;
-	margin-top: 0;
-	margin-bottom: 15px;
-}
+// h2 {
+// 	font-size: 40px;
+// 	margin-top: 0;
+// 	margin-bottom: 15px;
+// }
 
 p {
 	font-size: 28px;
@@ -27,6 +28,6 @@ a.cta {
 	padding: 20px;
 	color: white;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 20px;
 	border-radius: 20px;
 }
