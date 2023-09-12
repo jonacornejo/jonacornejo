@@ -36,7 +36,9 @@ a.cta {
   background: #fff0f0;
   border: 2px solid #b18597;
   border-radius: 0.75em;
+  overflow: visible !important;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 a.cta::before {
